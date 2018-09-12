@@ -1,0 +1,3 @@
+easycython ftry.pyx
+pause
+
