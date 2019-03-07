@@ -1,0 +1,3 @@
+easycython det.pyx
+pause
+

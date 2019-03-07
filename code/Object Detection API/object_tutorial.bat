@@ -1,0 +1,2 @@
+jupyter notebook object_detection_tutorial.ipynb
+pause
