@@ -1,0 +1,7 @@
+
+G:\Program Files\tensorflow\third_party\eigen3\Eigen
+G:\Program Files\tensorflow\tensorflow\contrib\cmake\build\external\eigen_archive
+G:\Program Files\tensorflow\tensorflow\contrib\cmake\build\external\nsync\public
+G:\Program Files\tensorflow\tensorflow\contrib\cmake\build\protobuf\src\protobuf\src
+G:\Program Files\tensorflow\tensorflow\contrib\cmake\build
+G:\Program Files\tensorflow
