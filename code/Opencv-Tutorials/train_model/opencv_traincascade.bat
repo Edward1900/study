@@ -1,0 +1,2 @@
+opencv_traincascade.exe  -data "J:\train\data" -vec  pos.vec  -bg  neg.txt -numPos  3000  -numNeg  1400  -numStages  19  -precalcValBufSize  5000  -precalcIdxBufSize  5000  -w 30  -h  35  -maxWeakCount  150  -featureType LBP  -minHitRate  0.995  -maxFalseAlarmRate 0.35
+Pause

@@ -1,3 +1,4 @@
-easycython det.pyx
+pip install easycython
+easycython pyf.pyx
 pause
 
