@@ -30,7 +30,7 @@ def rotate(xb,yb,angle):
     return xb,yb
     
 def blur(img):
-    img = cv2.blur(img, (3, 3));
+    img = cv2.blur(img, (3, 3))
     return img
 
 def add_noise(img):
