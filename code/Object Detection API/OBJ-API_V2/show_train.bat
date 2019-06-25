@@ -1,0 +1,2 @@
+tensorboard --logdir train
+pause

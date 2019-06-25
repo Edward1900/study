@@ -1,2 +1,0 @@
-tensorboard --logdir val
-pause

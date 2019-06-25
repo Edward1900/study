@@ -125,15 +125,18 @@ if __name__ == '__main__':  # 主函数入口
     i=0
     for p in paths:
         try:
-            src = dlib.load_rgb_image(p)
+            #src = dlib.load_rgb_image(p)
+            src = cv2.imread(p)
             rects = facedet(src)
             print(rects)
             for r in rects:
                 print(r)
                 IMG = src[r.tl_corner().y : r.br_corner().y,r.tl_corner().x : r.br_corner().x,:]
                 print(r.tl_corner() , r.br_corner())
-                IMG = dlib.resize_image(IMG,256,256)
-                dlib.save_image(IMG, "dst/dst{}.jpg".format(i))
+                # IMG = dlib.resize_image(IMG,256,256)
+                IMG = cv2.resize(IMG,(256,256))
+                #dlib.save_image(IMG, "dst/dst{}.jpg".format(i))
+                cv2.imwrite("dst/dst{}.jpg".format(i),IMG)
                 i = i+1
         except BaseException:
             print('错误，当前图片无法读取')
@@ -141,4 +144,5 @@ if __name__ == '__main__':  # 主函数入口
     # IMG_BGR = cv2.cvtColor(src,cv2.COLOR_RGB2BGR)
     # IMG = src[95:244,45:194,:]
     # dlib.save_image(IMG,"dst.jpg")
+
 
